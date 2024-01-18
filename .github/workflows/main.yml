@@ -25,7 +25,7 @@ jobs:
 
       - name: Publish
         run: |
-          dotnet publish -c Release -r win10-x64 --self-contained src/Antoine.Delaby.FeatureMatching.Console/Antoine.Delaby.FeatureMatching.Console.csproj
+          dotnet publish -c Release -r win10-x64 --self-contained ./src/Antoine.Delaby.FeatureMatching.Console/Antoine.Delaby.FeatureMatching.Console.csproj
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
