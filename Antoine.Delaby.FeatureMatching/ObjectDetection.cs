@@ -4,7 +4,22 @@ namespace Antoine.Delaby.FeatureMatching;
 
 public class ObjectDetection
 {
+    // Code mocké
     public async Task<IList<ObjectDetectionResult>> DetectObjectInScenesAsync(byte[]
+        objectImageData, IList<byte[]> imagesSceneData)
+    {
+        IList<ObjectDetectionResult> results = new List<ObjectDetectionResult>();
+        results.Add(new ObjectDetectionResult
+        { ImageData = new byte[]{0},
+            Points = new List<ObjectDetectionPoint> { new() {X=1,Y=2} }} );
+        results.Add(new ObjectDetectionResult
+        { ImageData = new byte[]{0},
+            Points = new List<ObjectDetectionPoint> { new() {X=1,Y=2} }} );
+
+        return results;
+    } 
+    
+    public async Task<IList<ObjectDetectionResult>> _DetectObjectInScenesAsync(byte[]
         imageObjectData, IList<byte[]> imagesSceneData)
     {
         // Variable qui va stocker les résultats des traitements
